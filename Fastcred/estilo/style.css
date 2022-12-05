@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 768px) { 
+
+    * {
+        margin: 0px;
+        padding: 0px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    img#logofast {
+        width: 150px;
+        height: 120px;
+        
+        
+        
+        
+        
+    }
+
+   img#imagemcabeca  {
+    width: 100vw;
+    height: 70vh;
+   
+    
+    
+    
+    
+   }
+
+
+   header {
+    
+   
+   }
+
+    
+}
+
+
