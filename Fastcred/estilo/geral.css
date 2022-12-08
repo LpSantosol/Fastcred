@@ -4,7 +4,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
-@media screen and (max-width: 768px) { 
+@media screen and (min-width: 769px) and (max-width: 992px) { 
 
     /*Estilo segue igual as imagens visuais*/
     
@@ -37,7 +37,6 @@
         height: 88vh;
         width: 100vw; 
         background: url(imagemfundo.jpg) right;
-        
                 
     }
 
@@ -75,10 +74,6 @@
         padding: 15px;
         
         
-    }
-
-    #idparcela {
-        display: none;
     }
 
 
@@ -276,26 +271,22 @@
             display: block;   
         }
     
-        section#baixo > div#perguntas h1.perguntas { /* Campo de dúvidas frequentes */
+        section#baixo > h1.perguntas { /* Campo de dúvidas frequentes */
             text-align: left;
             padding: 10px;
             margin-left: 15px;
             margin-top: 15px;
-            font-weight: bolder;
             
-            color: black;
+            color:#EF6C00;    
         }
-
-       
     
         p.pperguntas {  /* paragrafo das perguntas */
             margin-left: 23px;
             margin-right: 23px;
             padding-bottom: 20px;
-            background-color: rgb(2, 2, 2);
+            background-color: blue;
             padding: 10px;
             border-radius: 10px;
-            
             
         }
 
@@ -359,15 +350,6 @@
             bottom: 8%;
 
             background-color: rgb(255, 255, 255); 
-        }
-
-        #whatsapp {
-            position: fixed;
-            z-index: auto;
-            bottom: 30px;
-            right: 18px;
-            width: 70px;
-            height: 50px;
-        }
-          
+        }         
+       
 }

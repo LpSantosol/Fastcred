@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+/* CSS do iphone celular */
+
+@media screen and (max-width: 992px) {
+
+
+    ::-webkit-scrollbar {
+        margin: 0px;
+        padding: 0px;
+    }
+
+/* Telefone */
+    section#telefone {
+        transform: translate(-50%, -50%);
+        position: absolute;
+        top: 70.5%;
+        left: 45%;
+        width: 311px;
+        height: 627px;
+        background: url(../frame/frame-iphone.png);
+        background-repeat: no-repeat;
+        
+    }
+
+
+
+/* Imagem dentro do telefone */
+iframe#tela {
+    position: relative;
+    top: 80.5px;
+    left: 21.5px;
+    width: 267.5px;
+    height: 470px;   
+   
+}
+
+}
+

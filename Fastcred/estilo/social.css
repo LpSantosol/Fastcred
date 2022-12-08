@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+/* CSS dos links e botões */
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+img {
+width: 100vw;
+position: relative;
+}
+
+::-webkit-scrollbar {
+width: 0px;
+height: 0px;
+}
+
+
+
+a {
+   
+   position: absolute;
+    margin-left: 25px;
+    
+    bottom: 10%;
+    text-decoration: none;
+       
+}
+
+a:hover {
+   
+    box-shadow: 5px solid white;
+    
+}
+
+section#social {
+    text-align: right;
+}
+
+section#social img {
+    width: 50px;
+      
+    border-radius: 50%; 
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.462); 
+    box-sizing: border-box;
+} 
+
+section#social img:hover {
+    border: 2px solid rgba(255, 255, 255, 0.702);
+    transform: translate(-3px, -3px);
+    transition: transform .5s, border .2s;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.462);
+    
+}
+
+
+

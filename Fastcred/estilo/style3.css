@@ -1,12 +1,12 @@
 @charset "UTF-8";
 
-/* CSS Geral Mobile First */ 
+/* CSS Tablet´s */ 
 
-@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
-@media screen and (max-width: 768px) { 
+
+@media screen and (min-width: 993px)  { 
 
     /*Estilo segue igual as imagens visuais*/
+   
     
     * {
 
@@ -26,17 +26,22 @@
     body, html {
         height: 100vh;
         width: 100vw;    
+        background-color: rgb(0, 147, 192);
+        
+       
     }
     
        
     main > h1 {
-        text-align: left;              
+        text-align: center;  
+        background-color: black;              
     }
 
-    section#logofast {    /* Cabeçalho */
-        height: 88vh;
+    section#logofast {    /* Cabeçalho */   
         width: 100vw; 
-        background: url(imagemfundo.jpg) right;
+        background: url(imagemforumulario.png) no-repeat;
+        background-position: center;
+        background-size: cover;
         
                 
     }
@@ -47,16 +52,19 @@
          
         width: 150px;
         height: 100px; 
+       
     }
 
 
     .h2antecipa { /* Botões azuis inicio site */
 
-        width: 50vw;
-        height: 150px;
+        background-color: black;
+        height: 80px;
+        width: 850px;
+       
         
-        background-color: rgb(0, 0, 255);
-        color: #fafafa;
+       
+        color: rgb(255, 255, 255);
 
         border-radius: 10px;
 
@@ -65,46 +73,54 @@
 
         position: relative;
 
-        left: 47%;
-        padding: 5px;  
+        left: 4%;
+        padding: 15px;  
         margin: 10px; 
     }
 
     #h2antecipaid { /*  ajuste do primeiro balões a esquerda */
-        left: 5%;
+        left: 1%;
         padding: 15px;
         
         
     }
 
     #idparcela {
-        display: none;
+        padding: 10px;
+        margin: 5px;
+        border-radius: 10px;
+        width: 400px;
+        height: 150px;
+        color: rgb(255, 255, 255);
+        background-color: blue;
+        display: block;
+        text-align: center;
+       
     }
 
 
      #idnegativa { /* Frase de baixo dos balões */
-        color: blue;
+        color: rgb(0, 0, 0);
         
         padding: 10px;
         position: relative;
         font-size: 1.5em;
+        text-align: right;
         
         margin: 5px;
+        width: 350px;
         height: 25vh;
         border-radius: 10px;
-        display: block;
+        
         
      }
   
      a#contrate { /* Botão contrate */
        
-        width: 90vw;
+       
+        width: 400px;
         height: 7vh;
-
-        
-        margin-left: 7px;
-
-        
+                
         padding: 3px;
 
         text-align: center;
@@ -112,11 +128,11 @@
         font-weight: bold;
 
         color: rgb(255, 255, 255);
-        background-color: blue;
+        background-color: rgb(0, 0, 0);
         
         
         text-decoration: none;
-        border-radius: 5px;           
+        border-radius: 40px;           
      }
 
      a#contrate:hover {
@@ -130,31 +146,40 @@
     }
 
     #imageninicial { /* Imagem mulher com porquinho */
-        width: 100vw;
-        height: 410px;
-
-        padding-top: 35px;
-        background-color: white;
-  
+        display: none;
+         
         }
+
+   
 
     
 
     section#logofast > div#form { /* Div do formulário */
-        width: 92vw;
+        position: relative;
+        left: 50%;
+        top: 50%;
+        margin-bottom: 400px;
+       
+        transform: translate(-50%, 50%);
+        
+        width: 500px;
         height: 570px;
+        
+        bottom: 2%;
 
-        background-color:#EF6C00;
+        
        
         border-radius: 5px;
-        position: relative;
-        top: 30%;
-        left: 50%;
-
-        transform: translate(-50%, -50%);
+            
         overflow: hidden;
-        display: block;         
+        display: block;  
+        
+        
+      
+        
+               
     }
+
 
     a.aform { /* Representa o h1 do formulário, cursor auto  porque tem um link */
         text-decoration: none;
@@ -170,26 +195,38 @@
     h1#h1formulario { 
         color: rgb(255, 255, 255);
         text-align: center;
+        display: block;
+        width: 397px;
+        margin-left: 5px;
+        padding-bottom: 10px;
+        background-color:blue;
+        border-radius: 7px;
+       
+        
         
     }
 
     input.campodados {   /* preenchimento dentro do formulario */
-        width: 82vw;
-        height: 45px;
+        width: 400px;
+        height: 40px;
 
         padding-top: 5px;
         margin: 5px;
         padding: 10px;
+       
+        
 
         border-radius: 5px;
         border: 1px solid blue;
         
         font-weight: bolder;
 
-        background-color: rgb(255, 255, 255);
+        background-color: rgba(255, 255, 255, 0.384);
 
         display: block;    
     }
+
+
 
     input#camponome { /* Campo do nome */
         text-transform: capitalize;
@@ -201,20 +238,16 @@
         
     }
 
-    .fdados {
-        margin-left: 10px;
-        color: rgb(255, 255, 255);
+    .fdados { /* formulario dados */
+        margin-left: 5px;
+        color: blue;
         font-weight: bolder;
         
     }
 
     input#botaoenviar {
-        width: 82vw;
+        width: 408px;
         height: 40px;
-
-        padding-top: 5px;
-        padding: 5px;     
-        margin: 10px;
 
         background-color: blue;
         color: rgb(255, 255, 255);
@@ -224,6 +257,7 @@
 
         border-radius: 5px;
         border: none;
+        display: block;
     }
 
     input#botaoenviar:hover {
@@ -242,9 +276,10 @@
        
         input#cpsaldo {         /* Campo do saldo */ 
             height: 40px;
+            width: 250px;
 
             position: relative;
-            left: 50%;
+            left: 44%;
             transform: translate(-50%, -50%);
 
             margin-top: 25px;
@@ -256,46 +291,58 @@
                     
         }
 
-        label#botsaldo {
+        label#botsaldo { /* Frase "Qual é o valor do FGTS */
             color: rgb(255, 255, 255);
             font-weight: bolder;
-            text-align: center;
+            display: block;
+            margin-left: 48px;
         }
    
         section#baixo {
+
             width: 100vw;
-            height: 950px;
-                    
-            color: rgb(255, 255, 255);
-            background: rgb(243, 243, 243);
+            color: #ffffff; 
+            
+            background: rgb(255, 255, 255);
             font-weight: bold;
-                           
-            margin-top: 5px;
             margin-bottom: 5px;
             
             display: block;   
         }
+
+
+
+        div#perguntas {
+            margin-top: 40px;
+            margin-bottom: 40px;
+            
+            width: 600px;
+            position: relative;
+            left: 10%;
+            color: white;
+           
+            transform: translate(-40%,);
+        }
     
         section#baixo > div#perguntas h1.perguntas { /* Campo de dúvidas frequentes */
             text-align: left;
+            font-weight: bolder;
             padding: 10px;
             margin-left: 15px;
             margin-top: 15px;
-            font-weight: bolder;
+            color: #EF6C00; ;
             
-            color: black;
+            
+              
         }
-
-       
     
         p.pperguntas {  /* paragrafo das perguntas */
-            margin-left: 23px;
-            margin-right: 23px;
-            padding-bottom: 20px;
-            background-color: rgb(2, 2, 2);
+           
+            width: 800px;
+            
+            background-color: rgba(0, 0, 255, 0.795);
             padding: 10px;
             border-radius: 10px;
-            
             
         }
 
@@ -312,7 +359,7 @@
         h1.passoapasso { /* H1 do frase celular */
             margin-left: 10px;
             padding-left: 20px;
-            margin-top: 10px;
+            margin-top: 100px;
 
             font-size: 1.5em;
             text-align: left;
@@ -320,32 +367,64 @@
 
             color: blue;  
         }
-     
+         
 
         #final { /* Footer */
-            width: 100vw;
-            height: 100px;
-
-            padding: 10px;
-            margin-top: 678px;
+          
+           
+            width:100vw;         
+            padding: 100px;
+            margin-top: 240px;
+           
         
-            text-align: justify;
+            text-align: center;
             font-weight: 400;
-            font-size: small;
+          
 
-            background-color: rgb(255, 255, 255);
-            color: rgb(112, 112, 112);
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
             display: block;   
         }
 
-        .fotpara {
-            font-weight: 700;
 
+        /* Telefone */
+    section#telefone {
+        transform: translate(-50%, -50%);
+        position: absolute;
+        top: 40%;
+        left: 60%;
+        width: 311px;
+        height: 627px;
+        background: url(../frame/frame-iphone.png);
+        background-repeat: no-repeat;
+        
+    }
+
+
+
+/* Imagem dentro do telefone */
+iframe#tela {
+    position: relative;
+    top: 80.5px;
+    left: 21.5px;
+    width: 267.5px;
+    height: 470px;   
+   
+}
+        .fotpara {
+            display: block;
+            font-weight: 400;
+            
+           
+            
+           
         }
+
         #logofot { 
             width: 70px;
             height: 50px;
-            left: 40%;
+            
+            
             bottom: 8%;
            
         }
@@ -353,21 +432,20 @@
         #logofastfot { /* Botões logo tipo */
             width: 80px;
             height: 50px;
-
-            
-            left: 45%;
+   
+            left: 3%;
             bottom: 8%;
 
             background-color: rgb(255, 255, 255); 
         }
-
+      
         #whatsapp {
             position: fixed;
             z-index: auto;
             bottom: 30px;
             right: 18px;
-            width: 70px;
-            height: 50px;
+            width: 100px;
+            height: 70px;
         }
           
 }

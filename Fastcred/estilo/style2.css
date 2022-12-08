@@ -1,12 +1,12 @@
 @charset "UTF-8";
 
-/* CSS Geral Mobile First */ 
+/* CSS Tablet´s */ 
 
-@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
-@media screen and (max-width: 768px) { 
+
+@media screen and (min-width: 769px) and (max-width: 992px) { 
 
     /*Estilo segue igual as imagens visuais*/
+   
     
     * {
 
@@ -30,14 +30,13 @@
     
        
     main > h1 {
-        text-align: left;              
+        text-align: center;              
     }
 
     section#logofast {    /* Cabeçalho */
         height: 88vh;
         width: 100vw; 
         background: url(imagemfundo.jpg) right;
-        
                 
     }
 
@@ -52,7 +51,7 @@
 
     .h2antecipa { /* Botões azuis inicio site */
 
-        width: 50vw;
+        width: 30vw;
         height: 150px;
         
         background-color: rgb(0, 0, 255);
@@ -65,7 +64,7 @@
 
         position: relative;
 
-        left: 47%;
+        left: 24%;
         padding: 5px;  
         margin: 10px; 
     }
@@ -88,23 +87,22 @@
         padding: 10px;
         position: relative;
         font-size: 1.5em;
+        text-align: right;
         
         margin: 5px;
+        width: 350px;
         height: 25vh;
         border-radius: 10px;
-        display: block;
+        
         
      }
   
      a#contrate { /* Botão contrate */
        
-        width: 90vw;
+       
+        width: 400px;
         height: 7vh;
-
-        
-        margin-left: 7px;
-
-        
+                
         padding: 3px;
 
         text-align: center;
@@ -130,31 +128,37 @@
     }
 
     #imageninicial { /* Imagem mulher com porquinho */
-        width: 100vw;
-        height: 410px;
-
-        padding-top: 35px;
-        background-color: white;
-  
+        display: none;
+         
         }
+
+   
 
     
 
     section#logofast > div#form { /* Div do formulário */
-        width: 92vw;
+        position: relative;
+        left: 50%;
+        top: 50%;
+        transform: translate(-54%, -50%);
+        
+        width: 70vh;
         height: 570px;
+        
+        bottom: 2%;
 
         background-color:#EF6C00;
        
         border-radius: 5px;
-        position: relative;
-        top: 30%;
-        left: 50%;
-
-        transform: translate(-50%, -50%);
+            
         overflow: hidden;
-        display: block;         
+        display: block;  
+        
+        background: url(imagemforumulario.png) bottom;
+        
+               
     }
+
 
     a.aform { /* Representa o h1 do formulário, cursor auto  porque tem um link */
         text-decoration: none;
@@ -168,18 +172,21 @@
     }
 
     h1#h1formulario { 
-        color: rgb(255, 255, 255);
-        text-align: center;
+        color: blue;
+        text-align: left;
+        display: block;
+        width: 359px;
+        padding-bottom: 10px;
         
     }
 
     input.campodados {   /* preenchimento dentro do formulario */
-        width: 82vw;
-        height: 45px;
+        width: 40vw;
+        height: 40px;
 
         padding-top: 5px;
         margin: 5px;
-        padding: 10px;
+        
 
         border-radius: 5px;
         border: 1px solid blue;
@@ -190,6 +197,8 @@
 
         display: block;    
     }
+
+
 
     input#camponome { /* Campo do nome */
         text-transform: capitalize;
@@ -202,19 +211,15 @@
     }
 
     .fdados {
-        margin-left: 10px;
-        color: rgb(255, 255, 255);
+        margin-left: 5px;
+        color: blue;
         font-weight: bolder;
         
     }
 
     input#botaoenviar {
-        width: 82vw;
+        width: 360px;
         height: 40px;
-
-        padding-top: 5px;
-        padding: 5px;     
-        margin: 10px;
 
         background-color: blue;
         color: rgb(255, 255, 255);
@@ -224,6 +229,7 @@
 
         border-radius: 5px;
         border: none;
+        display: block;
     }
 
     input#botaoenviar:hover {
@@ -242,9 +248,10 @@
        
         input#cpsaldo {         /* Campo do saldo */ 
             height: 40px;
+            width: 250px;
 
             position: relative;
-            left: 50%;
+            left: 28%;
             transform: translate(-50%, -50%);
 
             margin-top: 25px;
@@ -256,10 +263,11 @@
                     
         }
 
-        label#botsaldo {
-            color: rgb(255, 255, 255);
+        label#botsaldo { /* Frase "Qual é o valor do FGTS */
+            color: blue;
             font-weight: bolder;
-            text-align: center;
+            display: block;
+            margin-left: 20px;
         }
    
         section#baixo {
@@ -270,32 +278,28 @@
             background: rgb(243, 243, 243);
             font-weight: bold;
                            
-            margin-top: 5px;
+            margin-top: 172px;
             margin-bottom: 5px;
             
             display: block;   
         }
     
-        section#baixo > div#perguntas h1.perguntas { /* Campo de dúvidas frequentes */
+        section#baixo > div#perguntas h1.perguntas{ /* Campo de dúvidas frequentes */
             text-align: left;
             padding: 10px;
             margin-left: 15px;
             margin-top: 15px;
-            font-weight: bolder;
             
-            color: black;
+            color:#EF6C00;    
         }
-
-       
     
         p.pperguntas {  /* paragrafo das perguntas */
             margin-left: 23px;
             margin-right: 23px;
             padding-bottom: 20px;
-            background-color: rgb(2, 2, 2);
+            background-color: blue;
             padding: 10px;
             border-radius: 10px;
-            
             
         }
 
@@ -323,18 +327,19 @@
      
 
         #final { /* Footer */
-            width: 100vw;
-            height: 100px;
+            width: 95vw;
+            margin-left: 25px;
+            border-radius: 10px;
 
             padding: 10px;
-            margin-top: 678px;
+            margin-top: 670px;
         
-            text-align: justify;
+            text-align: center;
             font-weight: 400;
             font-size: small;
 
-            background-color: rgb(255, 255, 255);
-            color: rgb(112, 112, 112);
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
             display: block;   
         }
 
@@ -345,7 +350,7 @@
         #logofot { 
             width: 70px;
             height: 50px;
-            left: 40%;
+            
             bottom: 8%;
            
         }
@@ -355,12 +360,12 @@
             height: 50px;
 
             
-            left: 45%;
+            left: 3%;
             bottom: 8%;
 
             background-color: rgb(255, 255, 255); 
         }
-
+ 
         #whatsapp {
             position: fixed;
             z-index: auto;
@@ -368,6 +373,6 @@
             right: 18px;
             width: 70px;
             height: 50px;
-        }
+        }    
           
 }

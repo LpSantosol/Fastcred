@@ -6,86 +6,197 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fastcred</title>
     <link rel="stylesheet" href="estilo/style.css">
+    <link rel="stylesheet" href="estilo/style2.css">
+    <link rel="stylesheet" href="estilo/style3.css">
+    
+    <link rel="stylesheet" href="estilo/social.css">
+    <link rel="stylesheet" href="estilo/secundario.css">
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap" rel="stylesheet">
 
 </head>
 <body>
     <main>
-        <section id="logofast">
-
-            <div id="logotipo">
-                <img src="estilo/Logofastcred.png" alt="">
-                <h1>Preencha nosso formulário para simular sua antecipação</h1>
-                
-                
-            </div>
+        <link rel="stylesheet" href="www.whats">
+       
+            <h1 id="h1main"><img id="idlogocred" src="estilo/Logofastcred.png" alt=""></h1>
             
-            <div id="form">
+            <section id="logofast">
+
+              
+            
+                <div>
+                    
+
+                <h2 class="h2antecipa" id="h2antecipaid">Antecipe seu FGTS com a Fastcred</h1>
+                <h2 class="h2antecipa" >A melhor taxa do mercado de 1.49% a.m</h2>
                 
+                    <h2 id="idparcela">Antecipe até 10 parcelas do seu FGTS conosco, livre de parcelas burocracia e dor de cabeça somente com a Fastcred
+                    </h2>
+                
+
+                 <div id="idnegativa">
+                <h2 id="idh2negativa">Também disponível para negativados</h2>
                
+                <p><a id="contrate" href="#form" alt="internal">Contrate agora</a></p>  
+                </div>
                 
-                <form action="api.php" method="post" id="idformulario">
+                    
+                 <img id="imageninicial" src="estilo/imagemporquinho.png" alt="internal">
+                </div>
+                 
+                <div id="logotipo">      
+                </div>
+                        
+                <div id="form">
+        
+                 <form action="api.php"  method="post" id="idformulario" autocomplete="on">
+                
+                   <p>
+                    <h1 id="h1formulario">Preencha nosso formulário para simular sua antecipação</h1>
+                   </p>
+            
                     <p>
-                        <label for="camponome" class="fdados">Nome</label>
+                        <label for="camponome" class="fdados">Nome Completo</label>
                         <input type="text" class="campodados"
                          id="camponome" name="campon"
                          minlength="6" maxlength="40" required>
-                        
                     </p>
+                   
 
-                    <p>
-                        <label for="campocpf" class="fdados">Cpf</label>
-                        <input type="number" class="campodados" id="campocpf" name="campoc">
-                        
+                    <p>    
+                        <label for="campocpf" class="fdados">CPF</label>
+                        <input type="text" class="campodados" 
+                         id="cpf" name="campoc" required
+                         autocomplete="off" maxlength="14">
                         
                     </p>
 
                     <p>
                         <label for="campoemail" class="fdados">E-mail</label>
-                        <input type="email" class="campodados" id="campoemail" name="emailn">
-                        
+                        <input type="email" class="campodados" 
+                        id="campoemail" name="emailn" required
+                        autocomplete="email">
                     </p>
                     
                     <p>
-                        <label for="campotel" class="fdados">Número de contato(Whatsapp)</label>
-                        <input type="tel" class="campodados"
+                        <label for="campotel" class="fdados">Número de contato 
+                        </label>
+                     
+                        <input type="tel"
+                        class="campodados" id="tel"
                         pattern="^\(\d{2}\)\d{4,5}-\d{4}$"            
-                          placeholder="(XX)XXXXX-XXXX" required
-                          maxlength="14"
-                         autocomplete="tel">
-                        
+                        required
+                        maxlength="14"
+                        autocomplete="off">
                     </p>
-
-                   
-                        <select name="botsaldo" id="idbotsaldo" >
-                            
-                           
-                                <optgroup label="     Saldo FGTS" selected >
-                           
-                                <option value="1" class="btsaldo">Valor: R$ 0 a 999</option selected>
-                                <option value="2" class="btsaldo">Valor: R$ 999 a 4.999</option>
-                                <option value="3" class="btsaldo">Valor: R$ 5.000 a 9.999</option>
-                                <option value="4" class="btsaldo">Valor: R$ 10.000 a 19.999</option>
-                                <option value="5" class="btsaldo">Valor: R$ 20.000 a 49.999</option>
-                                <option value="6" class="btsaldo">Valor superior</option>
-                                <option value="7" class="btsaldo">Não sei meu saldo</option>
-                            </optgroup>
-                    
-                    </select>
-               
-                    
-
-                    <input type="submit" value="Simular!" id="botaoenviar" name="campoe">
-
+        
+                      <label for="botsaldo" 
+                      id="botsaldo">
+                      <h2>Qual é o valor do seu FGTS</h2></label>  
+                        <input type="text"  min="400" max="1000000"
+                        id="cpsaldo"  onKeyPress="return(moeda(this,'.',',',event))"
+                        name="saldon" required autocomplete="off">
+                         
+                    <input type="submit" value="Simular"
+                     id="botaoenviar" name="campoe">
+                    </div>
                 </form>
-        </section>
 
-        <section id="formulario">
-          
+                <section id="baixo">
+            
+                    <div id="perguntas">
+                        <h1 class="perguntas">Oque é FGTS?</h1>
+                                        <p class="pperguntas">Fundo de Garantia do Tempo de Serviço é um fundo criado visando proteger o trabalhador demitido sem justa causa.</p>
+                            
+                                        <h1 class="perguntas">Aprenda mais sobre o Empréstimo FGTS</h1>
+                                        <p class="pperguntas">O Empréstimo FGTS com garantia no Saque aniversário é uma modalidade de crédito, que possibilita você de antecipar 10 Parcelas do seu saque FGTS, é isso mesmo até 10 parcelas.</p>
+                            
+                                        <h1 class="perguntas">Posso antecipar meu FGTS com inadimplência?</h1> 
+                            
+                                        <p class="pperguntas">Sim,  o empréstimo FGTS não faz consulta de crédito, mesmo com o nome sujo você pode antecipar.</p>
+                                        <h1 class="perguntas">Quanto eu irei pagar?</h1>
+                                        <p class="pperguntas">O empréstimo FGTS é descontando diretamente do seu saldo no fundo de garantia, você não precisar pagar nenhuma taxa ou mensalidade, antecipando seu FGTS conosco a taxa de juros é a melhor do mercado sendo a partir de 1,49% a.m.</p>
+                            
+                                        <h1 class="perguntas">Esse processo demora?</h1>
+                                        <p class="pperguntas">O processo de antecipação do FGTS, a partir da validação de todos os dados do titular, irá ocorrer em até 24 horas.</p>
+                        <h1 class="perguntas">Legal, mas eai como faço?</h1>
+                   
+                                        <p class="pperguntas">Essa parte é fácil, você pode seguir nosso tutorial abaixo, a contratação é 100% online, rápida e segura.</p>
+                        </div>
+                        
+                                        <section id="laranja">
+                        <section id="social">
+                                <h1 class="passoapasso"
+                                 >Abra seu aplicativo do FGTS</h1>
+                                <a href="fgts.html" target="tela">
+                                    <img class="botao" src="frame/fgts.png" alt="framefgts" >
+                                </a> <br>
+                        
+                            <section >
+                                <h1 class="passoapasso">Clique em saque "Autorize Bancos a consultarem seu saque FGTS"
+                                </h1>
+                                <a href="passo2.html" target="tela">
+                                <img  src="frame/logo2.png" alt="passo2">
+                                </a>  <br>
+                        
+                            <section>
+                             <h1 class="passoapasso">Agora clique em Empréstimo Saque-aniversário, para autorizar.
+                             </h1>
+                             <a href="passo3.html" target="tela">
+                            <img  src="frame/logo3.png" alt="passo3">
+                             </a> <br>
+                             <section>
+                                <h1 class="passoapasso">Por fim, autorize o Banco Votorantim a fazer consultas.</h1>
+                                <a href="passo4.html" target="tela">
+                                <img  src="frame/logo4.png" alt="passo4">
+                                </a> <br>
+                   
+                                  
+                        <section id="final" >
+                            <p>EXERCEMOS NOSSAS ATIVIDADES CONFORME OS REQUISITOS DA LEI
+                             13.709/2018, DENOMINADA LEI GERAL DE PROTEÇÃO DE DADOS PESSOAIS
+                             A EMPRESA FASTCRED NÃO É UMA INSTITUIÇÃO FINANCEIRA E NÃO REALIZA OPERAÇÕES DE 
+                                CRÉDITO DIRETAMENTE. É UMA PLATAFORMA DIGITAL QUE ATUA CORRESPONDENTE BANCÁRIO 
+                                PARA FACILITAR O PROCESSO DA CONTRATAÇÃO DE EMPRÉSTIMOS DE PESSOAS COMO VOCÊ.
+                                AS TAXAS DE JUROS E PRAZO DE PAGAMENTO PRATICADOS NOS EMPRÉSTIMOS OBSERVAM AS 
+                                DETERMINAÇÕES DE CADA CONVÊNIO, BEM COMO A POLÍTICA DE CRÉDITO INSTITUIÇÃO 
+                                FINANCEIRA A SER UTILIZADA.</p>
 
-            </div>
-        </section>
+                            <p class="fotpara">Atendimento de segunda a sexta das 9h as 20h, exceto feriados.</p>
+                            <p class="fotpara">800 600 0135</p>
+                            <p class="fotpara">Parceria com Banco BV</p>
+                            <img src="estilo/logobv.png" id="logofot"    alt="LogofinanceiraBV">
+                            <img id="logofastfot" src="estilo/Logofastcred.png" alt="Logofastcred">
+                                             </section>
+                                         <section>
+                                    </section>                                                                  
+                                </section> 
+                            </section>
+                        </section>
+                    </section>
+                
+                    <section id="telefone">
+                        <iframe src="home.html" frameborder="0" name="tela" id="tela">
+                            Seu navegador não é compativel.
+                        </iframe>   
+                    </section>    
     </main>
-    
-   
+    <div id="whatsapp">
+        <a href="https://whatsa.me/5555800600013/?t=Ol%C3%A1,%20%20estou%20interessados%20na%20proposta%20de%20antecipa%C3%A7%C3%A3o%20do%20FGTS">
+            <img id="whatsapp" src="estilo/WhatsApp.svg.png" alt="Falar conosco">
+        </a>
+    </div>
+                
+    <script src="formMask_V2.js"></script>
+    <script>
+        new FormMask(document.querySelector("#cpf"), "___.___.___-__", "_", [".", "-"])
+        new FormMask(document.querySelector("#tel"), "(__)_____-____", "_", ["(", ")", "-"])
+        
+      </script>
 </body>
 </html>
